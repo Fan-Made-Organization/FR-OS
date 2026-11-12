@@ -1,0 +1,15 @@
+[package]
+name = "mi_os"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["kernel"]
+
+[build-dependencies]
+kernel = { path = "kernel", artifact = "bin", target = "x86_64-unknown-none" }
+bootloader = "0.11"
+
+# Sin esto, dibujar pixeles en modo debug es lentisimo
+[profile.dev]
+opt-level = 3
