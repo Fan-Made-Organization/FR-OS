@@ -19,8 +19,8 @@ recibe correcciones.
 
 | Versión | Soportada          |
 | ------- | ------------------ |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 0.4.x  | :white_check_mark: |
+| < 0.4   | :x:                |
 
 > **Aviso importante:** este es un sistema operativo en desarrollo. Puede
 > fallar, congelarse o perder datos. Úsalo en una máquina virtual (QEMU) o en
