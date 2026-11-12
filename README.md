@@ -1,2 +1,1 @@
-# Software
-Please read README.md for more information
+# English Version
