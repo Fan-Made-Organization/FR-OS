@@ -8,3 +8,5 @@ Is Rolling Update (Beta)
 Este es Sistema operativo es simple y rapido escrito en Rust, no es inovador a este tiempo pero es un Software un poco especial de los otros, es de fans, puedes poner comentarios hispanos, ingles y en portugues si quieres, no hay problema, los voy a intentar leer todos y intentar introducirlos.
 Puedes modificar TODO este proyecto, es codigo abrierto, pero porfavor solo deja el copyright, es totalmente gratis, puedes compartir este proyecto, todo esta en español. es facil, metere dos carpetas, una que contiene todo el kernel y el otro la .img
 
+Es Rolling Updates. 
+
