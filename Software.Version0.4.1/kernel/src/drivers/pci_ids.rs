@@ -1,0 +1,62 @@
+//! Nombres legibles para fabricantes y clases PCI.
+
+pub fn vendor_name(id: u16) -> &'static str {
+    match id {
+        0x8086 => "Intel",
+        0x1022 => "AMD",
+        0x1002 => "AMD/ATI",
+        0x10DE => "NVIDIA",
+        0x10EC => "Realtek",
+        0x14E4 => "Broadcom",
+        0x168C | 0x1969 => "Qualcomm Atheros",
+        0x14C3 => "MediaTek",
+        0x11AB | 0x1B4B => "Marvell",
+        0x1AF4 => "Red Hat (virtio)",
+        0x1B36 => "Red Hat (QEMU)",
+        0x1234 => "QEMU/Bochs",
+        0x15AD => "VMware",
+        0x80EE => "VirtualBox",
+        0x1B21 => "ASMedia",
+        0x144D => "Samsung",
+        0x15B7 => "SanDisk",
+        0x1987 => "Phison",
+        0x126F => "Silicon Motion",
+        0x1E0F => "Kioxia",
+        0x1C5C => "SK hynix",
+        0x1D0F => "Amazon",
+        0x1106 => "VIA",
+        _ => "Desconocido",
+    }
+}
+
+pub fn class_name(class: u8, subclass: u8) -> &'static str {
+    match (class, subclass) {
+        (0x01, 0x00) => "SCSI",
+        (0x01, 0x01) => "IDE",
+        (0x01, 0x06) => "SATA",
+        (0x01, 0x08) => "NVMe",
+        (0x01, _) => "Almacenamiento",
+        (0x02, 0x00) => "Ethernet",
+        (0x02, 0x80) => "Red (Wi-Fi?)",
+        (0x02, _) => "Red",
+        (0x03, 0x00) => "VGA",
+        (0x03, _) => "Pantalla/GPU",
+        (0x04, 0x03) => "Audio HD",
+        (0x04, 0x01) => "Audio",
+        (0x04, _) => "Multimedia",
+        (0x05, _) => "Memoria",
+        (0x06, 0x00) => "Puente host",
+        (0x06, 0x01) => "Puente ISA",
+        (0x06, 0x04) => "Puente PCI",
+        (0x06, _) => "Puente",
+        (0x07, _) => "Comunicacion",
+        (0x08, _) => "Sistema",
+        (0x09, _) => "Entrada",
+        (0x0C, 0x03) => "USB",
+        (0x0C, 0x05) => "SMBus",
+        (0x0C, _) => "Bus serie",
+        (0x0D, 0x11) => "Bluetooth",
+        (0x0D, _) => "Inalambrico",
+        _ => "Otro",
+    }
+}
